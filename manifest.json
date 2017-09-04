@@ -5,6 +5,13 @@
 		"promise/bin/promise.js"
 	],
 	"game": [
-		"bin-debug/Main.js"
+		"bin-debug/AnchorText.js",
+		"bin-debug/Card.js",
+		"bin-debug/CardMain.js",
+		"bin-debug/DisplayObject.js",
+		"bin-debug/HitTest.js",
+		"bin-debug/Main.js",
+		"bin-debug/Mask.js",
+		"bin-debug/MyCard.js"
 	]
 }

@@ -11,12 +11,19 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-var Main = (function (_super) {
-    __extends(Main, _super);
-    function Main() {
-        return _super.call(this) || this;
+var CardMain = (function (_super) {
+    __extends(CardMain, _super);
+    function CardMain() {
+        var _this = _super.call(this) || this;
+        _this.addEventListener(egret.Event.ADDED_TO_STAGE, _this.onAddToStage, _this);
+        return _this;
     }
-    return Main;
+    CardMain.prototype.onAddToStage = function (event) {
+        // var _myCard:MyCard = new MyCard();
+        var _myCard = new Card();
+        this.addChild(_myCard);
+    };
+    return CardMain;
 }(egret.DisplayObjectContainer));
-__reflect(Main.prototype, "Main");
-//# sourceMappingURL=Main.js.map
+__reflect(CardMain.prototype, "CardMain");
+//# sourceMappingURL=CardMain.js.map

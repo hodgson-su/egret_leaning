@@ -11,12 +11,24 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-var Main = (function (_super) {
-    __extends(Main, _super);
-    function Main() {
-        return _super.call(this) || this;
+var AnchorText = (function (_super) {
+    __extends(AnchorText, _super);
+    function AnchorText() {
+        var _this = _super.call(this) || this;
+        _this.addEventListener(egret.Event.ADDED_TO_STAGE, _this.onAddToStage, _this);
+        return _this;
     }
-    return Main;
+    AnchorText.prototype.onAddToStage = function (event) {
+        var shp = new egret.Shape();
+        shp.graphics.beginFill(0xff0000);
+        shp.graphics.drawRect(0, 0, 100, 100);
+        shp.graphics.endFill();
+        this.addChild(shp);
+        // shp.x = 100;
+        // shp.y = 100;
+        shp.anchorOffsetX = 50;
+    };
+    return AnchorText;
 }(egret.DisplayObjectContainer));
-__reflect(Main.prototype, "Main");
-//# sourceMappingURL=Main.js.map
+__reflect(AnchorText.prototype, "AnchorText");
+//# sourceMappingURL=AnchorText.js.map

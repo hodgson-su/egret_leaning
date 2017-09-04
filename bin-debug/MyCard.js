@@ -11,12 +11,16 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-var Main = (function (_super) {
-    __extends(Main, _super);
-    function Main() {
+var MyCard = (function (_super) {
+    __extends(MyCard, _super);
+    function MyCard() {
         return _super.call(this) || this;
     }
-    return Main;
-}(egret.DisplayObjectContainer));
-__reflect(Main.prototype, "Main");
-//# sourceMappingURL=Main.js.map
+    MyCard.prototype.drawCard = function () {
+        this.graphics.beginFill(0x0000ff);
+        this.graphics.drawRect(0, 0, 20, 20);
+    };
+    return MyCard;
+}(egret.Shape));
+__reflect(MyCard.prototype, "MyCard");
+//# sourceMappingURL=MyCard.js.map
