@@ -1,4 +1,20 @@
 {
-	"groups":[],
-	"resources":[]
+	"groups": [
+		{
+			"name": "preload",
+			"keys": "toolt_png,yaotou_png"
+		}
+	],
+	"resources": [
+		{
+			"name": "toolt_png",
+			"type": "image",
+			"url": "assets/toolt.png"
+		},
+		{
+			"name": "yaotou_png",
+			"type": "image",
+			"url": "assets/yaotou.png"
+		}
+	]
 }

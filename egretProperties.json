@@ -14,6 +14,15 @@
 			"name": "egret"
 		},
 		{
+			"name":"tween"
+		},
+		{
+			"name": "res"
+		},
+		{
+			"name": "url"
+		},
+		{
 			"name": "promise",
 			"path": "./promise"
 		}

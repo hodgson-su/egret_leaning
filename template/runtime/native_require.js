@@ -30,7 +30,7 @@ egret_native.egretStart = function () {
     var option = {
         //以下为自动修改，请勿修改
         //----auto option start----
-		entryClassName: "CardMain",
+		entryClassName: "SimpleDate",
 		frameRate: 30,
 		scaleMode: "showAll",
 		contentWidth: 480,
